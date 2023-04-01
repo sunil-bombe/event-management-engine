@@ -1,32 +1,33 @@
-2021-51-23 11:51:36 [restartedMain] INFO  c.w.e.m.EventManagementEngineApplication -Starting EventManagementEngineApplication on DESKTOP-J2UJSLA with PID 5380 (C:\Users\sunil\git\event-management-engine\event-management-engine\target\classes started by sunil in C:\Users\sunil\git\event-management-engine\event-management-engine)
-2021-51-23 11:51:37 [restartedMain] INFO  c.w.e.m.EventManagementEngineApplication -No active profile set, falling back to default profiles: default
-2021-51-23 11:51:37 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-51-23 11:51:37 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-51-23 11:51:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-51-23 11:51:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2021-51-23 11:51:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.DecorationRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2021-51-23 11:51:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.FoodRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2021-51-23 11:51:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.ImagesRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2021-51-23 11:51:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.VenueBookingRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2021-51-23 11:51:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.VenueRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2021-51-23 11:51:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 1182ms. Found 6 JPA repository interfaces.
-2021-51-23 11:51:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-51-23 11:51:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2021-51-23 11:51:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.CountryRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
-2021-51-23 11:51:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.EventRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
-2021-51-23 11:51:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.RolesRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
-2021-51-23 11:51:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.StatesRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
-2021-51-23 11:51:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.UserDetailsRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
-2021-51-23 11:51:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
-2021-51-23 11:51:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 815ms. Found 5 MongoDB repository interfaces.
-2021-51-23 11:51:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
-2021-52-23 11:52:00 [restartedMain] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
-2021-52-23 11:52:00 [restartedMain] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.38]
-2021-52-23 11:52:03 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2021-52-23 11:52:03 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 25391 ms
-2021-52-23 11:52:04 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
-2021-52-23 11:52:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
-2021-52-23 11:52:10 [restartedMain] ERROR com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Exception during pool initialization.
+2023-58-01 23:58:50 [restartedMain] WARN  o.s.boot.StartupInfoLogger -InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2023-58-01 23:58:55 [restartedMain] INFO  c.w.e.m.EventManagementEngineApplication -Starting EventManagementEngineApplication on Sunils-MacBook-Pro.local with PID 14849 (/Users/sunilbombe/git/event-management-engine-master/event-management-engine/target/classes started by sunilbombe in /Users/sunilbombe/git/event-management-engine-master/event-management-engine)
+2023-58-01 23:58:55 [restartedMain] INFO  c.w.e.m.EventManagementEngineApplication -No active profile set, falling back to default profiles: default
+2023-58-01 23:58:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-58-01 23:58:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-58-01 23:58:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-58-01 23:58:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-58-01 23:58:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.DecorationRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2023-58-01 23:58:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.FoodRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2023-58-01 23:58:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.ImagesRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2023-58-01 23:58:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.VenueBookingRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2023-58-01 23:58:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.VenueRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2023-58-01 23:58:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 207ms. Found 6 JPA repository interfaces.
+2023-58-01 23:58:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-58-01 23:58:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-58-01 23:58:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.CountryRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2023-58-01 23:58:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.EventRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2023-58-01 23:58:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.RolesRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2023-58-01 23:58:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.StatesRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2023-58-01 23:58:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.UserDetailsRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2023-58-01 23:58:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.webwork.event.management.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2023-58-01 23:58:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 44ms. Found 5 MongoDB repository interfaces.
+2023-58-01 23:58:58 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2023-58-01 23:58:58 [restartedMain] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2023-58-01 23:58:58 [restartedMain] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.38]
+2023-58-01 23:58:58 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2023-58-01 23:58:58 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 2545 ms
+2023-58-01 23:58:58 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2023-58-01 23:58:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2023-58-01 23:58:59 [restartedMain] ERROR com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Exception during pool initialization.
 com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -57,9 +58,9 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.getVendorProperties(HibernateJpaConfiguration.java:132)
 	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:133)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
@@ -83,17 +84,17 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at com.webwork.event.management.EventManagementEngineApplication.main(EventManagementEngineApplication.java:12)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
 Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
@@ -103,31 +104,42 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
 	... 54 common frames omitted
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
 	... 57 common frames omitted
-2021-52-23 11:52:11 [task-1] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-52-23 11:52:11 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-52-23 11:52:11 [task-1] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.4.21.Final
-2021-52-23 11:52:12 [task-1] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2021-52-23 11:52:13 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
-2021-52-23 11:52:13 [restartedMain] INFO  org.mongodb.driver.cluster -Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2021-52-23 11:52:14 [cluster-ClusterId{value='60349f1502e12e5471a2d5c4', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
-2021-52-23 11:52:14 [cluster-ClusterId{value='60349f1502e12e5471a2d5c4', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8508000}
-2021-52-23 11:52:14 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
-2021-52-23 11:52:16 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7af166ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@781196b5, org.springframework.security.web.header.HeaderWriterFilter@777f8672, org.springframework.security.web.authentication.logout.LogoutFilter@3d4e17c, com.webwork.event.management.filter.JwtFilter@502c1056, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7beadd7a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73614282, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5984b5b8, org.springframework.security.web.session.SessionManagementFilter@1baeebcc, org.springframework.security.web.access.ExceptionTranslationFilter@28f24fe3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cc81aa4]
-2021-52-23 11:52:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
-2021-52-23 11:52:17 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener -Triggering deferred initialization of Spring Data repositories…
-2021-52-23 11:52:18 [task-1] ERROR com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Exception during pool initialization.
+2023-58-01 23:58:59 [task-1] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-58-01 23:58:59 [task-1] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.4.21.Final
+2023-58-01 23:58:59 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-59-01 23:59:00 [task-1] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-59-01 23:59:00 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2023-59-01 23:59:00 [restartedMain] INFO  org.mongodb.driver.cluster -Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-59-01 23:59:00 [cluster-ClusterId{value='642877ec1eaaa0467203b0df', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:127)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:63)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2023-59-01 23:59:00 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2023-59-01 23:59:01 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain -Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@112add0c, org.springframework.security.web.context.SecurityContextPersistenceFilter@432b99b0, org.springframework.security.web.header.HeaderWriterFilter@2d8939d0, org.springframework.security.web.authentication.logout.LogoutFilter@7d5bade4, com.webwork.event.management.filter.JwtFilter@638c9840, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@833af64, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4716322e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7130a370, org.springframework.security.web.session.SessionManagementFilter@55bf7f50, org.springframework.security.web.access.ExceptionTranslationFilter@62c2c624, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61451035]
+2023-59-01 23:59:01 [task-1] ERROR com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Exception during pool initialization.
 com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -163,17 +175,17 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
 Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
@@ -183,31 +195,31 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
 	... 33 common frames omitted
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
 	... 36 common frames omitted
-2021-52-23 11:52:18 [task-1] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator -HHH000342: Could not obtain connection to query metadata : Communications link failure
+2023-59-01 23:59:01 [task-1] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator -HHH000342: Could not obtain connection to query metadata : Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2021-52-23 11:52:18 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'rolesRepository' defined in com.webwork.event.management.repository.RolesRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-2021-52-23 11:52:18 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-52-23 11:52:18 [restartedMain] WARN  o.s.b.f.s.DisposableBeanAdapter -Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-2021-52-23 11:52:18 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor -Shutting down ExecutorService 'applicationTaskExecutor'
-2021-52-23 11:52:19 [restartedMain] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
-2021-52-23 11:52:20 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+2023-59-01 23:59:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2023-59-01 23:59:01 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener -Triggering deferred initialization of Spring Data repositories…
+2023-59-01 23:59:02 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.webwork.event.management.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-59-01 23:59:02 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-59-01 23:59:02 [restartedMain] WARN  o.s.b.f.s.DisposableBeanAdapter -Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-59-01 23:59:02 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor -Shutting down ExecutorService 'applicationTaskExecutor'
+2023-59-01 23:59:02 [restartedMain] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+2023-59-01 23:59:02 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-52-23 11:52:20 [restartedMain] ERROR o.s.boot.SpringApplication -Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'rolesRepository' defined in com.webwork.event.management.repository.RolesRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-59-01 23:59:02 [restartedMain] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.webwork.event.management.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1697)
@@ -238,9 +250,9 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at com.webwork.event.management.EventManagementEngineApplication.main(EventManagementEngineApplication.java:12)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
@@ -267,10 +279,10 @@ Caused by: org.hibernate.service.spi.ServiceException: Unable to create requeste
 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
 Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
 	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
 	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
