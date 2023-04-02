@@ -21,65 +21,42 @@ public class FoodServiceImpl implements FoodService {
 	private FoodRepository foodRepo;
 
 	@Override
-	@Transactional
 	public Food save(Food food) {
-		if (null != food.getId()) {
-			return foodRepo.save(food);
-		} else if (null != foodRepo.findByName(food.getName())) {
-			throw new DuplicateEntityException("food Aready Added..");
-		}
-		return foodRepo.save(food);
-	}
-	
-	@Override
-	@Transactional
-	public List<Food> saveAll(List<Food> foodList) {
-		List<Food> result = new ArrayList<>();
-		for(Food food: foodList) {
-			if(null!= food.getId()) {
-				result.add(foodRepo.save(food));
-			}else {
-				if(null!= foodRepo.findByName(food.getName())) {
-					throw new DuplicateEntityException("food Aready Exists..");
-				}
-				result.add(foodRepo.save(food));
-			}
-		}
-		return result;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
-	@Transactional
 	public boolean delete(String foodId) {
 		// TODO Auto-generated method stub
-		Optional<Food> result = foodRepo.findById(foodId);
-		if (!result.isPresent()) {
-			throw new EntityNotFoundException("Dish not present");
-		} else {
-			Food food = result.get();
-			foodRepo.delete(food);
-			return true;
-		}
+		return false;
 	}
 
 	@Override
 	public List<Food> getAll() {
-		List<Food> foodList = foodRepo.findAll();
-		if (foodList == null) {
-			throw new EntityNotFoundException("Food List not found..!");
-		}
-		return foodList;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
-	public Food get(String id) {
-		Optional<Food> result = foodRepo.findById(id);
-		if (!result.isPresent()) {
-			throw new EntityNotFoundException("Venue Not Found..!");
-		} else {
-			return result.get();
-		}
+	public Food get(int id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
+
+	@Override
+	public List<Food> saveAll(List<Food> foodList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean delete(int foodId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
 
 	
 

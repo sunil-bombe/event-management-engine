@@ -45,7 +45,7 @@ import com.webwork.event.management.service.VenueService;
 @RequestMapping("/public/event/1/0")
 public class PublicController {
 	private final Path root = Paths.get("uploads");
-	
+
 	private Converter convert;
 
 	@Autowired
@@ -56,15 +56,12 @@ public class PublicController {
 
 	@Autowired
 	private FoodService foodService;
-	
-	
+
 	@Autowired
 	private FilterService filterService;
 
 	@Autowired
 	private DecorationService decorationService;
-
-
 
 	@Autowired
 	private ImagesRepository imageRepo;
@@ -95,8 +92,7 @@ public class PublicController {
 		}
 		return response;
 	}
-	
-	
+
 	@GetMapping("/location/type")
 	public ResponseEntity<?> getLocationType() {
 		ResponseEntity<?> response = null;
@@ -130,35 +126,34 @@ public class PublicController {
 	}
 
 	@GetMapping("/food/{foodId}")
-	public ResponseEntity<?> food(@PathVariable String foodId) {
+	public ResponseEntity<?> food(@PathVariable Integer foodId) {
 		Food food = foodService.get(foodId);
 		return new ResponseEntity<>(food, HttpStatus.OK);
 	}
-	
+
 	@GetMapping("/decoration/all")
-	public ResponseEntity<?> decorationAll(){
+	public ResponseEntity<?> decorationAll() {
 		List<Decoration> decorationList = decorationService.getAll();
 		return new ResponseEntity<>(decorationList, HttpStatus.OK);
 	}
-	
+
 	@GetMapping("/decoration/{decorationId}")
-	public ResponseEntity<?> decoration(@PathVariable String decorationId){
+	public ResponseEntity<?> decoration(@PathVariable String decorationId) {
 		Decoration decoration = decorationService.get(decorationId);
 		return new ResponseEntity<>(decoration, HttpStatus.OK);
 	}
-	
 
 	@RequestMapping(value = "/files/load/{fileName}", produces = MediaType.IMAGE_JPEG_VALUE)
 	public byte[] load(@PathVariable String fileName) throws IOException {
 		return fileService.loadImage(fileName);
 	}
-	
+
 	@GetMapping("/files/load/encoded/{fileName}")
-	public ResponseEntity<?> loadFileString(@PathVariable String fileName){
-		
+	public ResponseEntity<?> loadFileString(@PathVariable String fileName) {
+
 		String encodedImage = null;
 		try {
-			 encodedImage = fileService.loadEncodedImage(fileName);
+			encodedImage = fileService.loadEncodedImage(fileName);
 		} catch (NoSuchFileException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -170,21 +165,21 @@ public class PublicController {
 	public List<Images> loadFile() {
 		return imageRepo.findAll();
 	}
-	
+
 	@PostMapping("/filter/venue")
-	public ResponseEntity<?> searchVenue(@RequestBody SearchDTO searchDto) throws ParseException{
+	public ResponseEntity<?> searchVenue(@RequestBody SearchDTO searchDto) throws ParseException {
 		List<Venue> venueList = null;
 		venueList = filterService.getFilteredVenue(searchDto);
 		return new ResponseEntity<>(venueList, HttpStatus.OK);
 	}
-	
+
 	@GetMapping("/country/all")
-	public List<Country> countryAll(){
+	public List<Country> countryAll() {
 		return addressService.findAll();
 	}
-	
+
 	@GetMapping("/states/{countryId}")
-	public List<States> statesByCountryIdAll(@PathVariable int countryId){
+	public List<States> statesByCountryIdAll(@PathVariable int countryId) {
 		return addressService.findByCountryId(countryId);
 	}
 }

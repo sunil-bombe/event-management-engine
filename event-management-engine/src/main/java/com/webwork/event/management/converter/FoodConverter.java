@@ -9,11 +9,11 @@ public class FoodConverter extends Converter<FoodDTO, Food> {
 	}
 
 	private static FoodDTO convertToDto(Food food) {
-		return new FoodDTO(food.getId(), food.getName(), food.getPrice(), food.getFoodType(), food.getImagesFile(), food.getrId());
+		return new FoodDTO(food.getId(), food.getName(), food.getPrice(), food.getFoodType(), food.getImageFile());
 	}
 
 	private static Food convertToEntity(FoodDTO foodDto) {
-		return new Food(foodDto.getId(),foodDto.getName(),foodDto.getPrice(),foodDto.getFoodType(),foodDto.getImagesFile(),foodDto.getrId());
+		return new Food(foodDto.getId(),foodDto.getName(),foodDto.getPrice(),foodDto.getFoodType(),foodDto.getImageFile());
 	}
 
 

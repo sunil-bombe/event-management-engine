@@ -1,52 +1,58 @@
 package com.webwork.event.management.entity;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-import org.springframework.data.mongodb.core.mapping.Document;
+import javax.persistence.Table;
 
 import com.webwork.event.management.enums.FoodType;
 
-@Document
+//@Document
+@Entity
+@Table(name="food")
 public class Food {
 
 	@Id
-	private String id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+	private int id;
 
+	@Column(name="name")
 	private String name;
 
+	@Column(name="price")
 	private float price;
 
-	private List<FoodType> foodType = new ArrayList<>();
+	@Column(name="foodType")
+	private FoodType foodType;
 
-	private List<String> imagesFile = new ArrayList<>();
-
-	private int rId;
+	@Column(name="imageFile")
+	private String imageFile;
 
 
 	public Food() {
 	}
 
 
-	public Food(String id, String name, float price, List<FoodType> foodType, List<String> imagesFile, int rId) {
-		super();
+	public Food(int id, String name, float price, FoodType foodType, String imageFile) {
 		this.id = id;
 		this.name = name;
 		this.price = price;
 		this.foodType = foodType;
-		this.imagesFile = imagesFile;
-		this.rId = rId;
+		this.imageFile = imageFile;
 	}
 
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -71,41 +77,34 @@ public class Food {
 	}
 
 
-	public List<FoodType> getFoodType() {
+	public FoodType getFoodType() {
 		return foodType;
 	}
 
 
-	public void setFoodType(List<FoodType> foodType) {
+	public void setFoodType(FoodType foodType) {
 		this.foodType = foodType;
 	}
 
 
-	public List<String> getImagesFile() {
-		return imagesFile;
+	public String getImageFile() {
+		return imageFile;
 	}
 
 
-	public void setImagesFile(List<String> imagesFile) {
-		this.imagesFile = imagesFile;
-	}
-
-
-	public int getrId() {
-		return rId;
-	}
-
-
-	public void setrId(int rId) {
-		this.rId = rId;
+	public void setImageFile(String imageFile) {
+		this.imageFile = imageFile;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Food [id=" + id + ", name=" + name + ", price=" + price + ", foodType=" + foodType + ", imagesFile="
-				+ imagesFile + ", rId=" + rId + "]";
+		return "Food [id=" + id + ", name=" + name + ", price=" + price + ", foodType=" + foodType + ", imageFile="
+				+ imageFile + "]";
 	}
+	
+	
+
 
 	
 }
