@@ -12,8 +12,10 @@ public interface FoodService {
 
 	public List<Food> getAll();
 
-	public Food get(String id);
+	public Food get(int id);
 
 	public List<Food> saveAll(List<Food> foodList);
+
+	boolean delete(int foodId);
 
 }
