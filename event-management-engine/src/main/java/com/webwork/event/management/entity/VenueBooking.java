@@ -2,22 +2,32 @@ package com.webwork.event.management.entity;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document
+@Entity
+@Table(name = "venuebooking")
 public class VenueBooking {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private String id;
 	
+	@Column(name = "venueId")
 	private String venueId;
 	
+	@Column(name = "venueName")
 	private String venueName;
 	
+	@Column(name = "userId")
 	private int userId;
 	
+	@Column(name = "date")
 	private Date date;
 
 	public VenueBooking() {

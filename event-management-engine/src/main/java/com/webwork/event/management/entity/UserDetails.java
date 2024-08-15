@@ -1,9 +1,7 @@
 package com.webwork.event.management.entity;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -11,7 +9,6 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name = "user_detail")
@@ -20,7 +17,7 @@ public class UserDetails {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
-	private int id;
+	private Integer id;
 	
 	@Column(name = "mobile")
 	private String phone;
@@ -47,7 +44,7 @@ public class UserDetails {
 	public UserDetails() {
 	}
 
-	public UserDetails(int id, String phone, String address, String city, String dist, String state, String pinCode,
+	public UserDetails(Integer id, String phone, String address, String city, String dist, String state, String pinCode,
 			User user) {
 		this.id = id;
 		this.phone = phone;
@@ -59,11 +56,11 @@ public class UserDetails {
 		this.user = user;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -126,8 +123,9 @@ public class UserDetails {
 	@Override
 	public String toString() {
 		return "UserDetails [id=" + id + ", phone=" + phone + ", address=" + address + ", city=" + city + ", dist="
-				+ dist + ", state=" + state + ", pinCode=" + pinCode + "]";
+				+ dist + ", state=" + state + ", pinCode=" + pinCode + ", user=" + user + "]";
 	}
+
 	
 
 	

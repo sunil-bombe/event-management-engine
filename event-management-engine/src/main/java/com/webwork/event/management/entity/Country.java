@@ -14,7 +14,7 @@ public class Country {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
-	private int Id;
+	private Integer Id;
 	
 	@Column(name="country_code")
 	private String countryCode;
@@ -25,17 +25,17 @@ public class Country {
 	public Country() {
 	}
 
-	public Country(int id, String countryCode, String name) {
+	public Country(Integer id, String countryCode, String name) {
 		Id = id;
 		this.countryCode = countryCode;
 		this.name = name;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return Id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		Id = id;
 	}
 
@@ -59,10 +59,6 @@ public class Country {
 	public String toString() {
 		return "Country [Id=" + Id + ", countryCode=" + countryCode + ", name=" + name + "]";
 	}
-	
-	
-	
-	
 	
 
 }

@@ -2,14 +2,14 @@ package com.webwork.event.management.repository;
 
 import java.util.List;
 
-import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.mongodb.repository.Query;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import com.webwork.event.management.entity.Venue;
 import com.webwork.event.management.enums.EventType;
 import com.webwork.event.management.enums.LocationType;
 
-public interface VenueRepository extends MongoRepository<Venue, String> {
+public interface VenueRepository extends JpaRepository<Venue, String> {
 
 	Venue findByName(String name);
 

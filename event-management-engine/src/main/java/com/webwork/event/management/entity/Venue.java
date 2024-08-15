@@ -1,51 +1,58 @@
 package com.webwork.event.management.entity;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-import org.springframework.data.mongodb.core.mapping.Document;
+import javax.persistence.Table;
 
 import com.webwork.event.management.dto.Address;
 import com.webwork.event.management.enums.EventType;
 
-@Document
+@Entity
+@Table(name = "venue")
 public class Venue {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private String id;
 
+	@Column(name = "name")
 	private String name;
 
+	@Column(name = "address")
 	private Address address;
 
-	private List<String> imagesFile = new ArrayList<>();
-
-	private int rId;
+	@Column(name = "imageFile")
+	private String imagesFile;
 
 	@Enumerated(EnumType.STRING)
-	private List<EventType> eventType = new ArrayList<>();
+	@Column(name = "eventType")
+	private EventType eventType;
 
+	@Column(name = "peopleCapacity")
 	private int peopleCapacity;
 
+	@Column(name = "rent")
 	private float rent;
 
-	private List<String> bookingId;
+	@Column(name = "bookingId")
+	private String bookingId;
 
 	public Venue() {
 	}
 
-	public Venue(String id, String name, Address address, List<String> imagesFile, int rId, List<EventType> eventType,
-			int peopleCapacity, float rent, List<String> bookingId) {
-		this.id = id;
+	public Venue(String id, String name, Address address, String imagesFile, EventType eventType, int peopleCapacity,
+			float rent, String bookingId) {
 		this.name = name;
 		this.address = address;
 		this.imagesFile = imagesFile;
-		this.rId = rId;
 		this.eventType = eventType;
 		this.peopleCapacity = peopleCapacity;
 		this.rent = rent;
@@ -76,27 +83,19 @@ public class Venue {
 		this.address = address;
 	}
 
-	public List<String> getImagesFile() {
+	public String getImagesFile() {
 		return imagesFile;
 	}
 
-	public void setImagesFile(List<String> imagesFile) {
+	public void setImagesFile(String imagesFile) {
 		this.imagesFile = imagesFile;
 	}
 
-	public int getrId() {
-		return rId;
-	}
-
-	public void setrId(int rId) {
-		this.rId = rId;
-	}
-
-	public List<EventType> getEventType() {
+	public EventType getEventType() {
 		return eventType;
 	}
 
-	public void setEventType(List<EventType> eventType) {
+	public void setEventType(EventType eventType) {
 		this.eventType = eventType;
 	}
 
@@ -116,26 +115,23 @@ public class Venue {
 		this.rent = rent;
 	}
 
-	public List<String> getBookingId() {
+	public String getBookingId() {
 		return bookingId;
 	}
 
-	public void setBookingId(List<String> bookingId) {
+	public void setBookingId(String bookingId) {
 		this.bookingId = bookingId;
 	}
 
 	@Override
 	public String toString() {
-		return "Venue [id=" + id + ", name=" + name + ", address=" + address + ", imagesFile=" + imagesFile + ", rId="
-				+ rId + ", eventType=" + eventType + ", peopleCapacity=" + peopleCapacity + ", rent=" + rent
-				+ ", bookingId=" + bookingId + "]";
+		return "Venue [id=" + id + ", name=" + name + ", address=" + address + ", imagesFile=" + imagesFile
+				+ ", eventType=" + eventType + ", peopleCapacity=" + peopleCapacity + ", rent=" + rent + ", bookingId="
+				+ bookingId + "]";
 	}
+	
+	
 
-	public void addBooking(String id) {
-		if (this.bookingId == null) {
-			this.bookingId = new ArrayList<>();
-		}
-		this.bookingId.add(id);
-	}
+
 
 }

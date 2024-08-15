@@ -20,24 +20,26 @@ public class DecorationServiceImpl implements DecorationService {
 
 	@Override
 	public Decoration save(Decoration decoration) {
-		if (null != decoration.getId()) {
-			return decorationRepo.save(decoration);
-		} else if (null != decorationRepo.findByName(decoration.getName())) {
-			throw new DuplicateEntityException("Already Exists..!");
-		}
-		return decorationRepo.save(decoration);
+//		if (null != decoration.getId()) {
+//			return decorationRepo.save(decoration);
+//		} else if (null != decorationRepo.findByName(decoration.getName())) {
+//			throw new DuplicateEntityException("Already Exists..!");
+//		}
+//		return decorationRepo.save(decoration);
+		return null;
 	}
 
 	@Override
 	public boolean delete(String decorationId) {
-		Optional<Decoration> result = decorationRepo.findById(decorationId);
-		if (!result.isPresent()) {
-			throw new EntityNotFoundException("decoration not found..!");
-		} else {
-			Decoration decoration = result.get();
-			decorationRepo.delete(decoration);
-			return true;
-		}
+//		Optional<Decoration> result = decorationRepo.findById(decorationId);
+//		if (!result.isPresent()) {
+//			throw new EntityNotFoundException("decoration not found..!");
+//		} else {
+//			Decoration decoration = result.get();
+//			decorationRepo.delete(decoration);
+//			return true;
+//		}
+		return false;
 	}
 
 	@Override

@@ -94,21 +94,21 @@ public class VenueServiceImpl implements VenueService {
 
 	@Override
 	public boolean bookVenue(VenueBooking venueBooking) {
-		venueBooking = setVenueName(venueBooking);
-		Optional<Venue> result = venueRepo.findById(venueBooking.getVenueId());
-		if (!result.isPresent()) {
-			throw new EntityNotFoundException("Venue Not Found");
-		}
-		Venue venue = result.get();
-
-		VenueBooking booking = bookingRepo.findByVenueIdAndDate(venueBooking.getVenueId(), venueBooking.getDate());
-		if (booking != null) {
-			throw new DuplicateEntityException("Venue Already Booked on Date: " + venueBooking.getDate());
-		}
-		booking = bookingRepo.save(venueBooking);
-		venue.addBooking(booking.getId());
-
-		venue = venueRepo.save(venue);
+//		venueBooking = setVenueName(venueBooking);
+//		Optional<Venue> result = venueRepo.findById(venueBooking.getVenueId());
+//		if (!result.isPresent()) {
+//			throw new EntityNotFoundException("Venue Not Found");
+//		}
+//		Venue venue = result.get();
+//
+//		VenueBooking booking = bookingRepo.findByVenueIdAndDate(venueBooking.getVenueId(), venueBooking.getDate());
+//		if (booking != null) {
+//			throw new DuplicateEntityException("Venue Already Booked on Date: " + venueBooking.getDate());
+//		}
+//		booking = bookingRepo.save(venueBooking);
+//		venue.addBooking(booking.getId());
+//
+//		venue = venueRepo.save(venue);
 		return true;
 	}
 

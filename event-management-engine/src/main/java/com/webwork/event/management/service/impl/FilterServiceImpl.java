@@ -52,38 +52,40 @@ public class FilterServiceImpl implements FilterService {
 	}
 
 	private List<Venue> getFilterByDate(List<Venue> venueList, Date theDate) throws ParseException {
-		if (theDate == null) {
-			return venueList;
-		}
-		System.out.println("Given Date" + theDate);
-		List<Venue> dateFilteredList = new ArrayList<Venue>();
-		for (Venue venue : venueList) {
-			System.out.println("\n Venue : " + venue);
-			List<String> bookingIdList = venue.getBookingId();
-			if (null != bookingIdList && !bookingIdList.isEmpty()) {
-				boolean flag = false;
-				for (String bookingId : venue.getBookingId()) {
-					Optional<VenueBooking> result = venueBookingRepo.findById(bookingId);
-					if (result.isPresent()) {
-						VenueBooking venueBook = (VenueBooking) result.get();
-						System.out.println("\n ==>" + venueBook.getDate());
-						System.out.println("\n booking Id" + bookingId);
-						if (theDate.compareTo(venueBook.getDate()) == 0) {
-							System.out.println("matched Date" + venueBook.getDate());
-							flag = false;
-						} else {
-							flag = true;
-						}
-					}
-				}
-				if (flag) {
-					dateFilteredList.add(venue);
-				}
-			} else {
-				dateFilteredList.add(venue);
-			}
-		}
-		return dateFilteredList;
+//		if (theDate == null) {
+//			return venueList;
+//		}
+//		System.out.println("Given Date" + theDate);
+//		List<Venue> dateFilteredList = new ArrayList<Venue>();
+//		for (Venue venue : venueList) {
+//			System.out.println("\n Venue : " + venue);
+//			String bookingIdList = venue.getBookingId();
+//			if (null != bookingIdList && !bookingIdList.isEmpty()) {
+//				boolean flag = false;
+//				for (String bookingId : venue.getBookingId()) {
+//					Optional<VenueBooking> result = venueBookingRepo.findById(bookingId);
+//					if (result.isPresent()) {
+//						VenueBooking venueBook = (VenueBooking) result.get();
+//						System.out.println("\n ==>" + venueBook.getDate());
+//						System.out.println("\n booking Id" + bookingId);
+//						if (theDate.compareTo(venueBook.getDate()) == 0) {
+//							System.out.println("matched Date" + venueBook.getDate());
+//							flag = false;
+//						} else {
+//							flag = true;
+//						}
+//					}
+//				}
+//				if (flag) {
+//					dateFilteredList.add(venue);
+//				}
+//			} else {
+//				dateFilteredList.add(venue);
+//			}
+//		}
+//		return dateFilteredList;
+		
+		return null;
 	}
 
 	private List<Venue> getFilterByLocation(List<Venue> venueList, LocationType location) {
@@ -101,17 +103,18 @@ public class FilterServiceImpl implements FilterService {
 	}
 
 	private List<Venue> getFilterByEventType(List<Venue> venueList, EventType eventType) {
-		List<Venue> eventTypeFilteredList = new ArrayList<Venue>();
-		if (eventType != null) {
-			for (Venue venue : venueList) {
-				if (venue.getEventType().contains(eventType)) {
-					eventTypeFilteredList.add(venue);
-				}
-			}
-		} else {
-			eventTypeFilteredList = venueList;
-		}
-		return eventTypeFilteredList;
+//		List<Venue> eventTypeFilteredList = new ArrayList<Venue>();
+//		if (eventType != null) {
+//			for (Venue venue : venueList) {
+//				if (venue.getEventType().contains(eventType)) {
+//					eventTypeFilteredList.add(venue);
+//				}
+//			}
+//		} else {
+//			eventTypeFilteredList = venueList;
+//		}
+//		return eventTypeFilteredList;
+		return null;
 	}
 
 }

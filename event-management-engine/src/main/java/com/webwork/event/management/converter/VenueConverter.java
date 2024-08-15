@@ -9,13 +9,12 @@ public class VenueConverter extends Converter<VenueDTO, Venue> {
 	}
 
 	private static VenueDTO convertToDto(Venue venue) {
-		return new VenueDTO(venue.getId(), venue.getName(), venue.getAddress(), venue.getImagesFile(), venue.getrId(),
+		return new VenueDTO(venue.getId(), venue.getName(), venue.getAddress(), venue.getImagesFile(),
 				venue.getEventType(), venue.getPeopleCapacity(), venue.getRent(), venue.getBookingId());
 	}
 
 	private static Venue convertToEntity(VenueDTO venueDto) {
-		return new Venue(venueDto.getId(), venueDto.getName(), venueDto.getAddress(), venueDto.getImagesFile(),
-				venueDto.getrId(), venueDto.getEventType(), venueDto.getPeopleCapacity(), venueDto.getRent(),venueDto.getBookingId());
+		return new Venue(venueDto.getId(), venueDto.getName(), venueDto.getAddress(), venueDto.getImagesFile(), venueDto.getEventType(), venueDto.getPeopleCapacity(), venueDto.getRent(),venueDto.getBookingId());
 	}
 
 }

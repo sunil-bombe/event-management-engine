@@ -1,7 +1,5 @@
 package com.webwork.event.management.entity;
 
-import java.util.List;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,7 +9,6 @@ import javax.persistence.Table;
 
 import com.webwork.event.management.enums.FoodType;
 
-//@Document
 @Entity
 @Table(name="food")
 public class Food {
@@ -19,7 +16,7 @@ public class Food {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
-	private int id;
+	private Integer id;
 
 	@Column(name="name")
 	private String name;
@@ -38,7 +35,8 @@ public class Food {
 	}
 
 
-	public Food(int id, String name, float price, FoodType foodType, String imageFile) {
+	public Food(Integer id, String name, float price, FoodType foodType, String imageFile) {
+		super();
 		this.id = id;
 		this.name = name;
 		this.price = price;
@@ -47,12 +45,12 @@ public class Food {
 	}
 
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -102,9 +100,6 @@ public class Food {
 		return "Food [id=" + id + ", name=" + name + ", price=" + price + ", foodType=" + foodType + ", imageFile="
 				+ imageFile + "]";
 	}
-	
-	
 
 
-	
 }
